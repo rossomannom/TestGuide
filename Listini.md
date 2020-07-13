@@ -27,7 +27,27 @@ Si puo' vedere come il raggruppamento di piu' tipo di listino.
 
 > **lis.Dettagli**
 
-rappresenta il posto dove vengono salvate le righe del listino. Questa tabelle tiene in memoria tutte le tabelle correlate. Ad esempio se ho una riga con 
+Rappresenta il posto dove vengono salvate le righe del listino. Questa tabelle tiene in memoria tutte le tabelle correlate. Ogni id della tabella corrisponde al suo corrispettivo nella tabella di riferimento.
+
+> **lis.Fasce, lis.Tratte, lis.Prodotti, lis.Trasporti**
+
+Sono tutte le tabelle che compongono la riga del listino, secondo le quali viene selezionata la riga e calcolato il prezzo
+
+>**lis.POI, lis.CategorieMezzo, lis.UnitaDiMisura**
+
+Sono tutte tabelle per la agganciare gli id delle tabelle secondarie
+>**lis.Calcoli**
+
+E' sempre una tabella secondaria ma tiene in memoria le regole di calcolo personalizzabili per ritornare il prezzo
+
+>**dbo.ClienteListino**
+
+Collega i clienti con la testata del listino e permette quindi la verifica dell'utilizzo dei listini nuovi o meno
+
+>**dbo.ClienteListinoImporti**
+
+Collega gli importi della riga del dettaglio con il cliente, questo perche' la riga di dettaglio puo'essere associato a piu' importi dentro la stessa testata
+
 
 
 ## Funzionamento del modulo
