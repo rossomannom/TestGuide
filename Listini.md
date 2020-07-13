@@ -17,7 +17,18 @@ E' consigliabile fare una voce nel menu del cliente con lo script sottostante
 ### Tabelle Coinvolte
 Nel database TirSQL sono coinvolte tutte le tabelle sotto lo schema **lis.**
 vediamole nel dettaglio
-**lis.Dettagli** rappresenta il posto dove vengono salvate le righe del listino. Questa tabelle tiene in memoria tutte le tabelle correlate. Ad esempio se ho una riga con 
+
+> **lis.Schemi**
+
+E' alla base di tutto. E' il posto dove vengono salvate le possibili configurazioni dei listini. Questa tabella viene popolata dall'interfaccia utente sotto Altri Dettagli > schemi. Se ad esempio un listino ha fasce e calcoli verranno valorizzati i campi HasFasce e HasCalcoli a true
+> **lis.Testate**
+
+Si puo' vedere come il raggruppamento di piu' tipo di listino.
+
+> **lis.Dettagli**
+
+rappresenta il posto dove vengono salvate le righe del listino. Questa tabelle tiene in memoria tutte le tabelle correlate. Ad esempio se ho una riga con 
+
 
 ## Funzionamento del modulo
 
