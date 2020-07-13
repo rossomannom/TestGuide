@@ -58,3 +58,5 @@ Una volta creata la testata si creano appunto **le associazioni del cliente** da
 A questo punto aggiungo una **nuova tipologia** di listino. Di default sono caricate le tipologie classiche di tir, ma sono sempre definite negli schemi.
 Poi si procede all'inserimento vero e proprio del listino che puo' essere fatto o tramite importazione o manualmente.
 Se si sta inserendo manualmente vengono i campi da inserire vengono visualizzati a seconda dello schema.
+### Calcolo del prezzo
+Chiaramente viene eseguito dalle conferme e non dai listini. E' sempre necessario che ci sia almeno un prodotto nella conferma. Al modifica salva dovrebbe gia' creare tutti i prezzi per il listino. Per il momento verifica sempre se c'e' una testata associata ad un cliente prima di decidere di utilizzare i listini vecchi o i listini nuovi.
