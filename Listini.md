@@ -49,3 +49,11 @@ Collega gli importi della riga del dettaglio con il cliente, questo perche' la r
 
 ## Funzionamento del modulo
 Come gia' detto, il segreto di questi listini e' la modularita' delle tabelle e dei dati.
+Questa modularita' si ottiene definendo gli schemi nell'apposita sezione, nella quale possiamo definire le specifiche del listino. Si possono usare anche tutte le specifiche assieme.
+La stored funziona leggendo tutti i possibili listini ed eliminando passo passo tutti i listini che non corrispondono a definizione.
+### Inserimento dei dati
+Per prima cosa devo definire la testata dei listini. La testata rappresenta un'insieme di tipologie di listini legate da proprieta' comuni da usare con piu' clienti. Ad Esempio un listino navale o un listino spedizioni hanno sempre e' molto probabile che abbiano sempre le stesse tratte e gli stessi prodotti. In quel caso si crea una sola testata e poi si abbinano ai vari clienti.
+Una volta creata la testata si creano appunto le associazioni del cliente dall'interno della testata.
+A questo punto aggiungo una nuova tipologia di listino. Di default sono caricate le tipologie classiche di tir, ma sono sempre definite negli schemi.
+Poi si procede all'inserimento vero e proprio del listino che puo' essere fatto o tramite importazione o manualmente.
+Se si sta inserendo manualmente vengono i campi da inserire vengono visualizzati a seconda dello schema.
