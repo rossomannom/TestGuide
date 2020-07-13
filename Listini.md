@@ -15,9 +15,8 @@ E' consigliabile fare una voce nel menu del cliente con lo script sottostante
 > INSERT [dbo].[MenuPlus] ([Nome], [Gruppo], [Path], [Descrizione], [Visible], [Immagine], [Ordine], [Attivo], [Richiede_Att], [Cod_Lic], [Colore]) VALUES (N'Listini Nuovi', N'ANAGRAFICHE', N'\Click\Listini\Listini.App.exe', NULL, 1, NULL, 20, 1, 0, N'069', N'#2E7D32')
 
 ### Tabelle Coinvolte
-Nel database TirSQL sono coinvolte tutte le tabelle sotto lo schema **lis.**
+Nel database TirSQL sono coinvolte tutte le tabelle sotto lo schema **lis.** . Per evitare spreco di dati queste tabelle non salvano righe uguali. Ad esempio se ho un importo di 10 euro presente in 50 righe di dettaglio, verra' salvato solo l'id di richiamo di quel prezzo e non 10 euro per ogni riga.
 vediamole nel dettaglio
-
 > **lis.Schemi**
 
 E' alla base di tutto. E' il posto dove vengono salvate le possibili configurazioni dei listini. Questa tabella viene popolata dall'interfaccia utente sotto Altri Dettagli > schemi. Se ad esempio un listino ha fasce e calcoli verranno valorizzati i campi HasFasce e HasCalcoli a true
@@ -48,7 +47,5 @@ Collega i clienti con la testata del listino e permette quindi la verifica dell'
 
 Collega gli importi della riga del dettaglio con il cliente, questo perche' la riga di dettaglio puo'essere associato a piu' importi dentro la stessa testata
 
-
-
 ## Funzionamento del modulo
-
+Come gia' detto, il segreto di questi listini e' la modularita' delle tabelle e dei dati.
