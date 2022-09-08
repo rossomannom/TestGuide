@@ -1,13 +1,20 @@
 Input:
 1)	Costi Fissi 
-  a.	Spese fisse mezzo (assicurazione, bollo, leasing, ecc)
-  b.	Spese fisse gestionali
-  c.	Costi autista (se si decide di inserire un dato fisso)
+
+     a.	Spese fisse mezzo (assicurazione, bollo, leasing, ecc)
+  
+     b.	Spese fisse gestionali
+  
+     c.	Costi autista (se si decide di inserire un dato fisso)
   
 2)	Costi Variabili
+
   a. Manutenzioni e riparazioni ordinarie;
+  
   b. Manutenzioni e riparazioni straordinarie;
+  
   c. Stipendi autisti caricati mensilmente + eventuali trasferte. 
+  
   d. Spese gasolio, adblue
   
   
